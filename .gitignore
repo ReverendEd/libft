@@ -1,0 +1,7 @@
+a.out
+.DS_Store
+/node_modules
+rules.md
+test.c
+/a.out.dSYM
+/.vscode
