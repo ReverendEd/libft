@@ -39,7 +39,11 @@ fclean: clean
 re: fclean all
 
 test:
+	gcc -Wall -Wextra -Werror test.c 
+
+libtest:
 	gcc -Wall -Wextra -Werror test.c -L. -lft
+
 
 verycooltest:
 	gcc -g -fsanitize=address -Wall -Wextra -Werror test.c
