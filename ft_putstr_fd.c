@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ed <ed@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/10 23:00:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/12 18:25:00 by tsehr            ###   ########.fr       */
+/*   Created: 2019/05/12 16:19:26 by ed                #+#    #+#             */
+/*   Updated: 2019/05/12 16:20:25 by ed               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putnbr(int n)
+void	ft_putstr_fd(char const *s, int fd)
 {
-	int copy;
-	int mult;
-	int j;
+	int i;
 
-	copy = n;
-	mult = 1;
-	while(copy > 9)
+	i = 0;
+	while (s[i])
 	{
-		mult *= 10;
-		copy /= 10;
-	}
-	while(n > 0)
-	{
-		j = n / mult + 48;
-		write(1, &j, 1);
-		n -= n / mult * mult;
-		mult /= 10;
+		write(fd, &s[i], 1);
+		i++;
 	}
 }
