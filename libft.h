@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:27:46 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/02 14:29:36 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/12 18:35:20 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 # define LIBFT_H
 
 #include <string.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list 	*next;
+}					t_list;
 
 int	ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -41,6 +48,7 @@ char	*ft_strrchr(const char *s, int c);
 const char *ft_strstr(const char *haystack, const char *needle);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
+
 
 
 #endif

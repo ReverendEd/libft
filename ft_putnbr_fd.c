@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/10 23:00:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/12 18:30:57 by tsehr            ###   ########.fr       */
+/*   Created: 2019/05/12 18:27:11 by tsehr             #+#    #+#             */
+/*   Updated: 2019/05/12 18:31:29 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putnbr(int n)
+#include <unistd.h>
+
+void ft_putnbr_fd(int n, int fd)
 {
    int i;
    int mult;
@@ -31,7 +33,7 @@ void ft_putnbr(int n)
        tmp = n / mult;
        n -= (tmp * mult);
        tmp += 48;
-       write(1, &tmp, 1);
+       write(fd, &tmp, 1);
        mult /= 10;
    }
 }
