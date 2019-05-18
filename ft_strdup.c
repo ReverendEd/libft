@@ -6,20 +6,20 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:22:59 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/01 17:23:29 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:42:29 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
-	int i;
-	char *new;
+	int		i;
+	char	*new;
 
 	i = 0;
 	new = (char *)malloc(sizeof(s1));
-	while(s1[i])
+	while (s1[i])
 	{
 		new[i] = s1[i];
 		i++;

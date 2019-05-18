@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 21:27:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/03 21:49:34 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:45:31 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memalloc(size_t size)
 {
-	int i;
-	char *mem;
+	int		i;
+	char	*mem;
 
 	i = 0;
 	mem = malloc(size);

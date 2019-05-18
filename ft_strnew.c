@@ -6,16 +6,16 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 16:26:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/04 16:26:36 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:44:45 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char *ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
-	char *string;
-	int i;
+	char	*string;
+	int		i;
 
 	string = (char *)malloc(size);
 	if (!string)

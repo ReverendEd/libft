@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:57:28 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/02 14:53:07 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:48:51 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	int i;
-	int t;
-	char *temp;
+	int		i;
+	int		t;
+	char	*temp;
 
 	i = 0;
 	t = n;

@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 14:33:08 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/06 14:33:09 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:51:07 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@ int	ft_strequ(char const *s1, char const *s2)
 	int i;
 
 	i = 0;
-	while(s1[i] && s2[i])
+	while (s1[i] && s2[i])
 	{
-		if(s1[i] != s2[i])
+		if (s1[i] != s2[i])
 		{
 			return (0);
 		}
 		i++;
 	}
-	if(s1[i] || s2[i])
+	if (s1[i] || s2[i])
 	{
 		return (0);
 	}

@@ -6,16 +6,16 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:31:52 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/01 17:31:54 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:42:14 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 
 	i = 0;
-	while(src[i])
+	while (src[i])
 	{
 		dst[i] = src[i];
 		i++;

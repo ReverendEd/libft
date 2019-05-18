@@ -6,11 +6,11 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 22:37:42 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/01 22:37:49 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 14:49:19 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int i;
 	int j;

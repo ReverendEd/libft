@@ -6,13 +6,13 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 23:20:42 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/01 23:21:57 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 11:00:02 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t ft_strlcat(char *s1, const char *s2, size_t dstsize)
+size_t	ft_strlcat(char *s1, const char *s2, size_t dstsize)
 {
 	int i;
 	int j;

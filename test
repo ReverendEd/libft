@@ -1,0 +1,16 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <unistd.h>
+#include "libft.h"
+// do strsplit and itoa
+
+
+int main(void)
+{
+    int number = -38574;
+    char *result = ft_itoa(number);
+    printf("%s", result);
+    return 0;
+}

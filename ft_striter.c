@@ -6,16 +6,16 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 13:42:48 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/06 13:42:49 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 11:12:16 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_striteri(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	int i;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		f(&s[i]);
 		i++;

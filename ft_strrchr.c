@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 00:00:42 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/02 08:21:25 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/17 11:13:59 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
-	char *r;
+	char	*last_pos;
 
-	i = 0;
-	r = (char *)s;
-	while (r[i])
-		i++;
-	while (r[i])
+	last_pos = (0);
+	while (*s)
 	{
-		if (r[i] == c)
-		{
-			return (&r[i]);
-		}
-		i--;
+		if (*s == c)
+			last_pos = (char*)s;
+		++s;
 	}
-	return (NULL);
+	if (last_pos)
+		return (last_pos);
+	if (c == '\0')
+		return ((char*)s);
+	return (0);
 }
