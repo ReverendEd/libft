@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 15:36:14 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/24 15:09:29 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/24 15:49:49 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	i = 0;
 	temp = (unsigned char *)dst;
 	temp2 = (unsigned char *)src;
-	while (temp[i] && temp2[i] && n > 0)
+	while (temp2[i] && n > 0)
 	{
 		temp[i] = temp2[i];
 		if (temp[i] == (unsigned char)c)
