@@ -6,11 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 13:39:57 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:40:48 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:36:51 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

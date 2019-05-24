@@ -6,28 +6,18 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:57:28 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:48:51 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/24 14:05:55 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int		i;
-	int		t;
-	char	*temp;
+	unsigned char	*ptr;
 
-	i = 0;
-	t = n;
-	temp = (char*)malloc(sizeof(char) * (n + 1));
-	while (i < t)
-	{
-		temp[i] = c;
-		i++;
-	}
-	temp[i] = '\0';
-	str = temp;
-	return (str);
+	ptr = (unsigned char*)b;
+	while (len-- > 0)
+		*(ptr++) = (unsigned char)c;
+	return (b);
 }

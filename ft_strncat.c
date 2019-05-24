@@ -6,11 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 22:43:18 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:45:48 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:31:35 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

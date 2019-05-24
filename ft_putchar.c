@@ -6,9 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 12:35:03 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/10 12:35:09 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:33:30 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar(char c)
 {

@@ -6,11 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 00:00:42 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 11:13:59 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:31:14 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

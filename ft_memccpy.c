@@ -6,25 +6,26 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 15:36:14 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 12:08:17 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/24 15:09:29 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	char	*temp;
-	char	*temp2;
-	int		i;
+	unsigned char	*temp;
+	unsigned char	*temp2;
+	int				i;
 
 	i = 0;
-	temp = (char *)dst;
-	temp2 = (char *)src;
+	temp = (unsigned char *)dst;
+	temp2 = (unsigned char *)src;
 	while (temp[i] && temp2[i] && n > 0)
 	{
 		temp[i] = temp2[i];
-		if (temp[i] == c)
+		if (temp[i] == (unsigned char)c)
 		{
 			return (&temp[i + 1]);
 		}

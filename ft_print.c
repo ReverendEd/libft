@@ -6,11 +6,13 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 10:19:53 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/02 10:21:03 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:35:38 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+int	ft_print(int c)
 {
 	if (c >= 32 && c <= 127)
 		return (1);

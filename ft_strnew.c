@@ -6,11 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 16:26:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:44:45 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:31:20 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

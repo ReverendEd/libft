@@ -6,11 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:02:16 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:47:39 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:36:29 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 static int		get_nb_size(unsigned int nb)
 {

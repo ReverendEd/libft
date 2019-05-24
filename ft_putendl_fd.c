@@ -6,9 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 16:23:25 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:43:10 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:34:01 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)
 {

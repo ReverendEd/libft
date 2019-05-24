@@ -6,12 +6,13 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 10:26:38 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/04 10:26:45 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:36:01 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
+#include "libft.h"
 
 void	ft_memdel(void **ap)
 {

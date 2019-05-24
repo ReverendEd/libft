@@ -6,9 +6,11 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 14:33:08 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:51:07 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:32:03 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strequ(char const *s1, char const *s2)
 {

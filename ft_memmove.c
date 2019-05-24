@@ -6,15 +6,16 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:00:37 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 11:00:49 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/24 15:13:43 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int			i;
+	size_t		i;
 	char		*temp;
 	const char	*temp2;
 

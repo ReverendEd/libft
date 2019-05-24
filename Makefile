@@ -6,7 +6,7 @@
 #    By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/02 13:24:24 by tsehr             #+#    #+#              #
-#    Updated: 2019/05/02 15:42:51 by tsehr            ###   ########.fr        #
+#    Updated: 2019/05/22 16:07:10 by tsehr            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,13 +38,13 @@ fclean: clean
 
 re: fclean all
 
-test:
-	gcc -Wall -Wextra -Werror test.c 
+# test:
+# 	gcc -Wall -Wextra -Werror test.c 
 
-libtest:
-	gcc -Wall -Wextra -Werror test.c -L. -lft
+# libtest:
+# 	gcc -Wall -Wextra -Werror test.c -L. -lft
 
 
-verycooltest:
-	gcc -g -fsanitize=address -Wall -Wextra -Werror test.c
+# verycooltest:
+# 	gcc -g -fsanitize=address -Wall -Wextra -Werror test.c
 

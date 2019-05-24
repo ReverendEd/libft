@@ -6,15 +6,16 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 14:30:31 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 11:10:55 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:31:10 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+static char		*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*substring;
 	int		i;
@@ -34,7 +35,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	return (substring);
 }
 
-int		get_letter_count(char const *s, char c)
+static int		get_letter_count(char const *s, char c)
 {
 	int i;
 
@@ -46,7 +47,7 @@ int		get_letter_count(char const *s, char c)
 	return (i);
 }
 
-int		get_word_count(char const *s, char c)
+static int		get_word_count(char const *s, char c)
 {
 	int word_count;
 	int i;
@@ -64,7 +65,7 @@ int		get_word_count(char const *s, char c)
 	return (word_count);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		word_count;
 	char	**result;

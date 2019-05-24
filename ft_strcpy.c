@@ -6,9 +6,11 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:31:52 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 14:42:14 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/22 17:32:14 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {
