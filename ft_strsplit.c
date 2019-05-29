@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 14:30:31 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:31:10 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 10:14:57 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "libft.h"
-
-static char		*ft_strsub(char const *s, unsigned int start, size_t len)
-{
-	char	*substring;
-	int		i;
-
-	i = 0;
-	substring = (char *)malloc(len);
-	if (!substring)
-		return (NULL);
-	while (s[start] && len > 0)
-	{
-		substring[i] = s[start];
-		i++;
-		start++;
-		len--;
-	}
-	substring[i] = '\0';
-	return (substring);
-}
 
 static int		get_letter_count(char const *s, char c)
 {
@@ -76,8 +56,8 @@ char			**ft_strsplit(char const *s, char c)
 	i = 0;
 	k = 0;
 	letter_count = 0;
-	result = (char **)malloc(sizeof(char *) * word_count);
 	word_count = get_word_count(s, c);
+	result = (char **)malloc(sizeof(char *) * word_count);
 	while (s[i])
 	{
 		if (s[i] != c && (s[i - 1] == c || i == 0))

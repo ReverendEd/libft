@@ -6,10 +6,11 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 23:00:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:32:37 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/28 13:37:12 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr(int n)
