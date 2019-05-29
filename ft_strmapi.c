@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 14:11:30 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:31:38 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 13:19:40 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char	*new;
 	int		i;
 
-	new = (char *)malloc(sizeof(s));
+	i = 0;
+	while (s[i])
+		i++;
+	new = (char *)malloc(sizeof(char) * (i + 1));
 	if (!new)
 		return (NULL);
 	i = 0;
@@ -27,5 +30,6 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 		new[i] = f(i, s[i]);
 		i++;
 	}
+	new[i] = '\0';
 	return (new);
 }
