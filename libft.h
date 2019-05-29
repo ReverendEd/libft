@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:27:46 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:16:07 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 11:39:32 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char			*ft_strnew(size_t size);
 const char		*ft_strnstr(const char *src, const char *search, size_t len);
 char			*ft_strrchr(const char *s, int c);
 char			**ft_strsplit(char const *s, char c);
-const char		*ft_strstr(const char *haystack, const char *needle);
+char			*ft_strstr(const char *haystack, const char *needle);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s);
 int				ft_tolower(int c);

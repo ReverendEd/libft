@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 16:26:35 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/28 13:34:34 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 11:35:56 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnew(size_t size)
 	char	*string;
 	int		i;
 
-	string = (char *)malloc(size);
+	string = (char *)malloc(size + 1);
 	if (!string)
 		return (NULL);
 	i = 0;

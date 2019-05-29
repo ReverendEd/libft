@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:00:37 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/24 16:08:39 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 11:16:25 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char		*temp;
 	const unsigned char	*temp2;
 
+	if (dst == NULL || src == NULL)
+		return (dst);
 	i = 0;
 	temp = (unsigned char *)dst;
 	temp2 = (unsigned char *)src;
