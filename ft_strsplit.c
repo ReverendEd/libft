@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 14:30:31 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/29 10:14:57 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/30 00:17:44 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char			**ft_strsplit(char const *s, char c)
 	letter_count = 0;
 	word_count = get_word_count(s, c);
 	result = (char **)malloc(sizeof(char *) * word_count);
+	if (!result || !*s)
+		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c && (s[i - 1] == c || i == 0))

@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:01:14 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 10:01:15 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 20:17:18 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	t_list	*ptr;
+	t_list	*temp;
 
-	ptr = lst;
-	while (ptr)
+	temp = lst;
+	while (temp)
 	{
-		f(ptr);
-		ptr = ptr->next;
+		f(temp);
+		temp = temp->next;
 	}
 }

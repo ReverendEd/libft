@@ -6,23 +6,22 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:00:19 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/17 10:00:20 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 23:33:30 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	t_list	*ptr;
-	t_list	*tmp;
+	t_list	*temp;
 
-	ptr = *alst;
-	while (ptr)
+	while (*alst)
 	{
-		tmp = ptr;
-		ft_lstdelone(&ptr, del);
-		ptr = tmp->next;
+		temp = (*alst)->next;
+		ft_lstdelone(alst, del);
+		*alst = temp;
 	}
 	*alst = NULL;
 }

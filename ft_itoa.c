@@ -6,50 +6,57 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:02:16 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:36:29 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 23:49:05 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-static int		get_nb_size(unsigned int nb)
+static int				get_size(unsigned int nb)
 {
-	unsigned int	size;
+	unsigned int	i;
 
-	size = 0;
+	i = 0;
 	while (nb >= 10)
 	{
 		nb /= 10;
-		++size;
+		i++;
 	}
-	return (size + 1);
+	return (i + 1);
 }
 
-char			*ft_itoa(int nbr)
+static unsigned int		is_neg(int nbr)
 {
-	char			*str;
-	unsigned int	nb;
-	unsigned int	index;
-	unsigned int	size;
-
 	if (nbr < 0)
-		nb = (unsigned int)(nbr * -1);
+		return ((unsigned int)(nbr * -1));
 	else
-		nb = (unsigned int)nbr;
-	size = (unsigned int)get_nb_size(nb);
-	index = 0;
-	if (!(str = (char*)malloc(sizeof(char) * (size + 1 + (nbr < 0 ? 1 : 0)))))
+		return ((unsigned int)nbr);
+}
+
+char					*ft_itoa(int nbr)
+{
+	char			*result;
+	unsigned int	num;
+	unsigned int	i;
+	unsigned int	j;
+
+	num = is_neg(nbr);
+	j = (unsigned int)get_size(num);
+	i = 0;
+	result = (char*)malloc(sizeof(char) * (j + 1 + (nbr < 0 ? 1 : 0)));
+	if (!result)
 		return (0);
-	if (nbr < 0 && (str[index] = '-'))
-		size++;
-	index = size - 1;
-	while (nb >= 10)
+	if (nbr < 0 && (result[i] = '-'))
+		j++;
+	i = j - 1;
+	while (num >= 10)
 	{
-		str[index--] = (char)(nb % 10 + 48);
-		nb /= 10;
+		result[i] = (char)(num % 10 + 48);
+		num /= 10;
+		i--;
 	}
-	str[index] = (char)(nb % 10 + 48);
-	str[size] = '\0';
-	return (str);
+	result[i] = (char)(num % 10 + 48);
+	result[j] = '\0';
+	return (result);
 }

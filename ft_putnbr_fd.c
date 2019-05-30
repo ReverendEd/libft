@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 18:27:11 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:32:41 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/29 23:48:20 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,20 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int i;
-	int mult;
-	int cpy;
-	int tmp;
+	unsigned int	number;
 
-	i = 0;
-	cpy = n;
-	mult = 1;
-	while (cpy > 0)
+	if (n < 0)
 	{
-		mult *= 10;
-		cpy /= 10;
+		ft_putchar_fd(('-'), fd);
+		number = -n;
 	}
-	mult /= 10;
-	while (mult >= 1)
+	else
 	{
-		tmp = n / mult;
-		n -= (tmp * mult);
-		tmp += 48;
-		write(fd, &tmp, 1);
-		mult /= 10;
+		number = n;
 	}
+	if (number >= 10)
+	{
+		ft_putnbr_fd((number / 10), fd);
+	}
+	ft_putchar_fd(((number % 10) + '0'), fd);
 }

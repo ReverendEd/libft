@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 23:50:13 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/22 17:30:49 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/30 08:24:14 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,13 @@ char	*ft_strtrim(char const *s)
 	int j;
 
 	i = 0;
+	if (!*s || s[i] == '\0')
+		return ("");
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 	{
 		i++;
+		if (!s[i])
+			return ("");
 	}
 	j = i;
 	while (s[j])
@@ -32,5 +36,5 @@ char	*ft_strtrim(char const *s)
 	{
 		j--;
 	}
-	return (ft_strsub(s, i, j - i));
+	return (ft_strsub(s, i, (j - i + 1)));
 }

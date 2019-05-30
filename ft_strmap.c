@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 14:08:40 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/29 13:19:44 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/30 00:08:34 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmap(char const *s, char (*f) (char))
 	char	*new;
 	int		i;
 
+	if (!*s || !*f)
+		return (NULL);
 	i = 0;
 	while (s[i])
 		i++;

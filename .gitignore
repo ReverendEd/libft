@@ -5,3 +5,4 @@ rules.md
 test.c
 /a.out.dSYM
 /.vscode
+*.o
