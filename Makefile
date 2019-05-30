@@ -6,7 +6,7 @@
 #    By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/02 13:24:24 by tsehr             #+#    #+#              #
-#    Updated: 2019/05/29 22:00:51 by tsehr            ###   ########.fr        #
+#    Updated: 2019/05/30 12:56:12 by tsehr            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,8 @@ FILES=ft_atoi.c ft_bzero.c ft_isalnum.c \
 	ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c ft_lstadd.c \
 	ft_lstdel.c ft_lstdelone.c ft_lstiter.c \
-	ft_lstmap.c ft_lstnew.c
+	ft_lstmap.c ft_lstnew.c ft_strempty.c \
+	ft_intmax.c ft_intmin.c
 
 OBJ= $(patsubst %.c,%.o,$(FILES))
 

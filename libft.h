@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:27:46 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/29 21:55:54 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/30 12:36:28 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,8 @@ void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstnew(void const *content, size_t content_size);
+int				ft_strempty(char *s);
+int				ft_intmax(void);
+int				ft_intmin(void);
 
 #endif
