@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 14:27:46 by tsehr             #+#    #+#             */
-/*   Updated: 2019/05/30 12:36:28 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/05/30 13:09:11 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ t_list			*ft_lstnew(void const *content, size_t content_size);
 int				ft_strempty(char *s);
 int				ft_intmax(void);
 int				ft_intmin(void);
+void			ft_strrev(char *s);
 
 #endif
