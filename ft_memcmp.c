@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:56:27 by tsehr             #+#    #+#             */
-/*   Updated: 2019/06/03 16:15:10 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/06/03 16:17:58 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	ptr = (unsigned char*)s1;
 	ptr2 = (unsigned char*)s2;
 	i = 0;
-	while (*ptr == *ptr2 && i < n)
+	while (*ptr == *ptr2 && ++i < n)
 	{
 		ptr++;
 		ptr2++;
-		++i;
 	}
 	return ((int)(*ptr - *ptr2));
 }
